@@ -1,0 +1,89 @@
+@import '../../scss/';
+
+.popup-delete-project {
+  display: flex;
+  flex-direction: column;
+  width: $create-form-form-width;
+  height: 200px;
+  background-color: #ffffff;
+  &__desc {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  &__btn {
+    border: none;
+    background-color: #5C8CC5;
+    display: block;
+    font-size: 1.25rem;
+    color: #D7E3F0;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem auto;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+      background-color: #961616;
+    }
+  }
+}
+
+.popup-error {
+  display: flex;
+  flex-direction: column;
+  width: $create-form-form-width;
+  background-color: #ffffff;
+  &__title {
+    color: #961616;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  &__desc {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.popup-close {
+  @include flexible(center, center);
+  width: 30px;
+  height: 30px;
+  background: #961616;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s all;
+  &:hover {
+    background: red;
+  }
+}
+
+
+.popup-edit-project {
+  margin: 0 auto;
+  width: $create-form-form-width;
+  border: 1px solid black;
+  padding:  1rem 2rem;
+  background-color: #ffffff;
+  &-inp-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    &__item {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      outline: none;
+      border: 2px solid $input-color;
+      color:  #575757;
+    }
+  }
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+::placeholder {
+  color: $input-color;
+}

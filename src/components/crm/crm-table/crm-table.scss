@@ -1,0 +1,41 @@
+.crm-table {
+  border-collapse: collapse;
+  width: 98%;
+  margin: auto;
+  &-header {
+    border-bottom: 2px solid #F0F0ED;
+    &__row {
+      padding: 0.5rem;
+      text-align: left;
+      &-title {
+        color: #747474;
+        padding: 0.5rem 0;
+        min-width: 70px;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+          background: #dddddd;
+        }
+      }
+      &-cell {
+        padding: 1rem 0;
+        border-bottom: 2px solid #F0F0ED;
+      }
+      // border: 2px solid black;
+    }
+  }
+  &-body {
+    border-bottom: 2px solid #F0F0ED;
+    &__row {
+      padding: 0.5rem;
+      text-align: left;
+      &-cell {
+        padding: 1rem 0;
+        border-bottom: 2px solid #F0F0ED;
+        &-action {
+          position: relative;
+        }
+      }
+    }
+  }
+}

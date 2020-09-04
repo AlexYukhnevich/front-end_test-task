@@ -1,0 +1,11 @@
+@import '../../../scss/';
+
+.auth-form {
+  margin: 1rem auto 0;
+  width: $registration-form-width;
+  padding:  1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #000000;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #7c7c7c, #000000);
+}

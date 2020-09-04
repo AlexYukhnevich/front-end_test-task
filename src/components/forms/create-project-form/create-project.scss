@@ -1,0 +1,31 @@
+@import '../../../scss/';
+
+.create-project-form {
+  margin: 0 auto;
+  width: $create-form-form-width;
+  border: 1px solid black;
+  padding:  1rem 2rem;
+  background-color: #ffffff;
+  &-inp-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    &__item {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      outline: none;
+      border: 2px solid $input-color;
+      color:  #575757;
+    }
+  }
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+::placeholder {
+  color: $input-color;
+}

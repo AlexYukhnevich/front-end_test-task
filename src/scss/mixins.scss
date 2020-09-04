@@ -1,0 +1,10 @@
+@mixin flexible ($horizontal, $vertical) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin nav-mixin ($position) {
+    display: flex;
+    justify-content: $position;
+}

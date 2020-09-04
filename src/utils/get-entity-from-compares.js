@@ -1,0 +1,1 @@
+export const getEntityFromCompares = (a, b) => a === b ? a : b;

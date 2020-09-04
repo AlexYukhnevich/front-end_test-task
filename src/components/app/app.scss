@@ -1,0 +1,87 @@
+@import '../../scss/';
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: NoirText, sans-serif;
+  position: relative;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.btn {
+  border: none;
+  display: block;
+  background-color: $btn-color;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: $input-color;
+}
+
+.verified {
+  color: green;
+}
+
+.non-verified {
+  color: red;
+}
+
+.error-message {
+  @include flexible(center, center);
+  height: 30px;
+  color: red;
+  text-align: center;
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.icon-wrapper {
+  position: absolute;
+}
+
+.active-cursor {
+  cursor: pointer;
+}
+
+.change-component-structure {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 1rem;
+  width: 700px;
+  &-accept {
+    grid-column: span 2;
+    text-align: center;
+  }
+  &-req__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-error {
+    grid-column: span 2;
+  }
+  &-btn-submit {
+    grid-column: span 2;
+    margin: 24px;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../../assets/fonts/fontello/css/fontello.css";
+@import '../../../scss/';
+
+.crm-search {
+  display: flex;
+  position: relative;
+  width: 350px;
+  &-inp-wrapper {
+    position: relative;    
+    margin-right: 10px;
+    &__search {
+      width: 100%;
+      border: 2px solid $border-color;
+      padding: 0.5rem 1rem 0.5rem 2rem;
+      background-color: $crm-header-color;
+      outline: none;
+    }
+  }
+  &__btn {
+    border: 2px solid $border-color;
+    font-weight: bold;
+    color: $header-text-color;
+    padding: 0.5rem 1rem;
+    background-color: $crm-header-color;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+.icon-wrapper-search {
+  left: 5px;
+  top: calc(50% - 0.675rem);
+  font-size: 1.25rem;
+}
+
+::placeholder {
+  color: $border-color;
+  font-size: 12px;
+}

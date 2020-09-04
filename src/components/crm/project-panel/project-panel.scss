@@ -1,0 +1,20 @@
+.crm-project-panel {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  &__title {
+    color: #626363;
+    font-weight: bold;
+  }
+  &__create {
+    border: none;
+    background-color: #5C8CC5;
+    color: #D7E3F0;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    outline: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+  }
+}

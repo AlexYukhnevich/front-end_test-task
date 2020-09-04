@@ -1,0 +1,45 @@
+
+.crm-table-body__row {
+  &-cell-wrapper-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.crm-table-body__row-action {
+  position: relative;
+  border-bottom: 2px solid #F0F0ED;
+}
+
+.list-bullets {
+  padding: 0;
+  display: flex;
+  &__item {
+    width: 7px;
+    height: 7px;
+    margin-right: 3px;
+    border-radius: 50%;
+    background-color: #000000;
+  }
+}
+
+.project-status-name {
+  padding: 0.5rem 0;
+  width: 125px;
+  text-align: center;
+  &-to-do {
+    background-color: #ACC5E1;
+  }
+  &-design {
+    background-color: #AAFAFD;
+  }
+  &-in-progress {
+    background-color: #A4FBC1;
+  }
+  &-in-review {
+    background-color: #96E5CC;
+  }
+  &-done {
+    background-color: #665571;
+  }
+}

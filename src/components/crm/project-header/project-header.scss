@@ -1,0 +1,17 @@
+@import '../../../scss';
+
+.crm-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $crm-header-color;
+  &-wrapper {
+    @include flexible(space-between, center);
+    width: 100%;
+    padding: 1rem 0rem 2rem 1rem;
+  }
+}
+
+.crm-button {
+  border: 2px solid $border-color;
+  padding: 0.5rem 1rem;
+}

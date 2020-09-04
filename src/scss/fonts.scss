@@ -1,0 +1,15 @@
+// Sans-serif 
+@font-face {
+  font-family: 'NoirText';
+  src: local('NoirText Regular'), url('../assets/fonts/noir-text/NoirText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NoirText';
+  src: local('NoirText Light'), url('../assets/fonts/noir-text/NoirText-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NoirText';
+  src: local('NoirText Bold'), url('../assets/fonts/noir-text/NoirText-Bold.ttf') format('truetype');
+}

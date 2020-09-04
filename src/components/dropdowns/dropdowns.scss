@@ -1,0 +1,36 @@
+@import '../../scss/';
+
+.dd-list-project-actions {
+  position: absolute;
+  background: #ffffff;
+  left: -123px;
+  box-shadow: 0px 2px 7px #000000;
+  width: 150px;
+
+  z-index: $project-dropdown-actions-index;
+  user-select: none;
+  &__item {
+    padding: 0.75rem 0;
+    position: relative;
+    color: $border-color;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    &:hover {
+      background: #dddddd;
+    }
+  }
+  &__item:first-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    display: block;
+    background: $border-color;
+    width: 90%;
+    height: 2px;
+    margin: 0 auto;
+  }
+}
+

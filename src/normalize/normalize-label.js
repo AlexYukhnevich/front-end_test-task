@@ -1,0 +1,1 @@
+export const normalizeLabel = (label) => label.replace(' ', '_').toLowerCase();
