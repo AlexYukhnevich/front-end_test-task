@@ -67,3 +67,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # P.S 
 Didn't have time to write tests and deploy
+Also, this implementation has some problems with inputs.
+I also did not fully understand what the field **"Acquired"** means.
+I was pulling values from the database as projects of other users.

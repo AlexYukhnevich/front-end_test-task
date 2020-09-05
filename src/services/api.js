@@ -12,7 +12,7 @@ class Api {
         this.outputError(error.response.data.message);
       }
       this.outputError(error);
-      return { success: false, message: 'Something went wrong!' };
+      return { success: false, message: error.response.data.message };
     }
   }
 }

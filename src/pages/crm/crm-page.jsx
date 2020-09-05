@@ -12,7 +12,8 @@ import { FETCH_TIMEOUT } from  '../../constants';
 
 const CrmHeader = Header(LogoutPageNav);
 
-const CrmPage = ({ loadingData, fetchProjects, setError, projects }) => {
+const CrmPage = ({ loadingData, fetchProjects, setError }) => {
+
   useEffect(() => {
     loadingData(true);
     const timer = (async () => {
@@ -43,10 +44,6 @@ const CrmPage = ({ loadingData, fetchProjects, setError, projects }) => {
   )
 }
 
-const mapStateToProps = ({ project }) => ({
-  projects: project.projects
-});
-
 const mapDispatchToProps = (dispatch) => ({
   loadingData: (bool) => dispatch(dataActions.loadingAction(bool)),
   fetchProjects: (response) => {
@@ -56,4 +53,4 @@ const mapDispatchToProps = (dispatch) => ({
   setError: (err) => dispatch(dataActions.errorAction(err)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(CrmPage);
+export default connect(null, mapDispatchToProps)(CrmPage);

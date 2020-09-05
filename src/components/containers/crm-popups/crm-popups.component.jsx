@@ -88,7 +88,7 @@ CrmPopupsComponent.propTypes = {
   activeProjectId: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.oneOf([null]),
-  ]).isRequired,
+  ]),
 };
 
 export default CrmPopupsComponent;

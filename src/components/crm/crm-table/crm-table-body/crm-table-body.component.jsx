@@ -41,7 +41,7 @@ CrmTableBodyComponent.propTypes = {
   activeProjectId: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.oneOf([null]),
-  ]).isRequired,
+  ]),
   user: PropTypes.shape({
     id: PropTypes.number,
     role: PropTypes.string,

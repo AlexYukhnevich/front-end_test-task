@@ -6,7 +6,7 @@ import { useInput } from '../../hooks';
 import { withRouter } from 'react-router-dom';
 import { tokenErrors } from '../../../errors/messages';
 
-const AuthFormComponent = ({ authApi, history }) => {
+const AuthFormComponent = ({ authApi, history, setUser }) => {
 
   const email = useInput('');
   const password = useInput('');
@@ -23,8 +23,10 @@ const AuthFormComponent = ({ authApi, history }) => {
       }
       if (data.access_token) {
         authApi.tokenService.setAccessToken(data.access_token);
+        setUser(data.user);
         history.push('/projects');
-      } else {
+      } 
+      else {
         throw new Error(tokenErrors.notFound);
       }  
     } catch ({ message }) {
