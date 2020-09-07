@@ -62,12 +62,16 @@ const RegistrationFormComponent = ({ authApi, history }) => {
         };
   
         const response = await authApi.signUp(body);
+
         if (response.success) {
           history.push('/sign-up');
         }
+
+        throw new Error(response.message);
+
       } else {
-        throw new Error(userErrors.invalidFields)
-      } 
+        throw new Error(userErrors.invalidFields);
+      }
     } 
     catch ({ message }) {
       setError(message);
